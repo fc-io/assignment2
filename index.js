@@ -1,11 +1,11 @@
 import chalk from 'chalk';
 import fs from 'fs/promises'
-// import { compareAsc, format } from 'date-fns'
 import {formatDistanceToNow, isAfter, isBefore, parse, format, isToday, set} from 'date-fns'
 import {Command} from 'commander';
 import getGitVersion from './src/getGitVersion.js';
 
 const gitVersion = await getGitVersion()
+console.log(`git version: ${gitVersion}`);
 
 const first = 'Fredrik'
 const last = 'Carlsson'

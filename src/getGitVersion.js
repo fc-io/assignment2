@@ -4,9 +4,8 @@ import util from 'util'
 async function getGitVersion() {
   const asyncExec = util.promisify(exec);
   const { stdout: gitVersion } = await asyncExec('git --version');
-  console.log(`git version: ${gitVersion}`);
 
-  return gitVersion
+  return gitVersion.trim()
 }
 
 export default getGitVersion
