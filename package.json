@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "jasmine"
+    "test": "jasmine **/src/*Spec.js"
   },
   "author": "",
   "license": "MIT",
